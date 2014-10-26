@@ -14,13 +14,19 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
 
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <script src="js/wow.min.js"></script>
+    <script>
+     new WOW().init();
+    </script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,7 +47,8 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <img id="cs_icon" src="img/lone_icon.png" alt="CS Icon" style="width:27px;height:27px">                                                                                         </a>
+                    <img id="cs_icon" src="img/lone_icon.png" alt="CS Icon" style="width:27px;height:27px">             
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -52,14 +59,18 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">about</a>
+                        <a class="page-scroll" href="./html/about.html">about</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">our story</a>
+                        <a class="page-scroll" href="./html/ourstory.html">our story</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">get early access</a>
+                        <a class="page-scroll" href="./html/blog.html">blog</a>
                     </li>
+                    <li>
+                        <button class="page-scroll btn btn-default" id= 'daButton'>get early access</button>
+                    </li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -72,12 +83,18 @@
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <div class="titleHolder">
-                        <h1 class="brand-heading"><span id="cancerSpot_title">Cancer Spot</span> connecting everyone in the world affected by cancer.</h1>
-                        <p class="intro-text">Sign up for ish.</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+                    <div class="titleHolder" id="titleHolder">
+                        <h1 class="brand-heading wow fadeInUp"><span id="cancerSpot_title">Cancer Spot</span> connecting everyone in the world affected by cancer.</h1>
+                        <form action="http://mycancerspot.us9.list-manage.com/subscribe/post" method="POST"><input type="hidden" name="u" value="2ad44f721697263b75aca6684">
+                        <input type="hidden" name="id" value="d29ae79363">
+                            <fieldset>
+                                <div class="field-wrap">
+                                    <input class="emailSignup"  type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="inputThing" size="25" value="" placeholder="Enter your email...">
+                                    <input class="signup_share_hash" name="signup[share_hash]" type="hidden" />
+                                    <button type="submit" value="Subscribe to list" name="subscribe" class="btn-submit">get early access</button>
+                                </div>
+                            </fieldset>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -88,69 +105,67 @@
     <section class="bp_section">
         <div class="bigPhoto">
             <div class="bpTextBox">
-                <h1 class="headersText">connect and support</h1>
-                <h2>Cancer Spot provides a mobile platform for fighters, survivors and supporters of cancer to connect and support each other 24/7.</h2>
+                <h1 class="headersText whiteh1 wow slideInLeft" data-wow-duration="1s" data-wow-delay="0s">connect and support</h1>
+                <h2 class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="0s">Cancer Spot provides a mobile platform for fighters, survivors and supporters of cancer to connect and support each other 24/7.</h2>
             </div>
         </div>
     </section>
 
      <!-- Connecting About -->
+
     <section class="aboutBox">
-                <div class="aboutPicBox">
+
+                <div class="connectingaboutPicBox wow slideInLeft" data-wow-duration="2s" data-wow-delay="0s">
+                    <img src="./img/FeediPhoneWshadow.png">
                 </div>
                 <div class="aboutTextBox">
-                    <h1 id="headersText">connecting</h1>
-                    <h2 class="brand-heading about_div greyText">users will be connected based off shimilar characteristics such as type of cancer, age and location.</h2>
-                    <h2>this way a 35 year old in Montana with Leukemia will have the opportunity to get advice and share stories with a 33 year old Leukemia survivor in Los Angeles.</h2>
+                    <h1 id="headersText" class="wow slideInRight" data-wow-duration="1s" data-wow-delay="0s">connecting</h1>
+                    <h3 class="brand-heading about_div greyText wow slideInRight" data-wow-duration="1s" data-wow-delay="0s">Users will be connected based off shimilar characteristics such as type of cancer, age and location.</h3>
+                    <h3 class="wow slideInRight" data-wow-duration="1s" data-wow-delay="0s">This way a 35 year old in Montana with Leukemia will have the opportunity to get advice and share stories with a 33 year old Leukemia survivor in Los Angeles.</h3>
                 </div>
     </section>
 
     <!-- Messaging About -->
-    <section class="aboutBox">
-                <div class="aboutPicBox">
+    <section class="aboutBoxTwo" class="two">
+                
+                <div class="aboutTextBox">
+                    <h1 id="headersText" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="0s">messaging</h1>
+                    <h3 class="brand-heading about_div greyText wow slideInLeft" data-wow-duration="1s" data-wow-delay="0s">After connecting, mutual support will take place through mobile messaging.</h3>
+                    <h3 class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="0s">Users will be able to speak one on one, or engage in group messagin. así, modern support groups can form where access to the group is 24/7.</h3>
                 </div>
-                <div id="textLeft" class="aboutTextBox">
-                    <h1 id="headersText">messaging</h1>
-                    <h2 class="brand-heading about_div greyText">after connecting, mutual support will take place through mobile messaging.</h2>
-                    <h2>users will be able to speak one on one, or engage in group messagin. así, modern support groups can form where access to the group is 24/7.</h2>
+                <div class="messagingaboutPicBox wow slideInRight" data-wow-duration="2s" data-wow-delay="0s" >
+                    <img src="./img/MessageiPhoneWshadow.png">
                 </div>
     </section>
     
-    <!-- Multi Phone Paralax -->
-    <section class="functionCon">
-        <div class="functionPhoto"></div>
+
+    <!-- OUR STORY -->
+    <section class="ourStory">
+        <div class="ourStoryPhoto">
+            <div class="osTextBox">
+                <h1 class="whiteh1">our story</h1>
+                <h2>Lorem ipsum dolor sit amet, amet tibique vivendum ad sea, eu pri illum dictas. Est an eros aperiri. Quot perpetua volutpat no pro. Ei copiosae similique est. No justo veritus atomorum vis, vitae oblique lobortis ius ut. Per no moderatius vituperata contentiones, vis ex alii persequeris.</h2>
+                <h2>Eam diam percipitur no. Ei virtute labores vis, vel et accusam molestiae quaerendum. Sea oratio omnesque antiopam ne.Ei erant dolorum quo, vix suscipit salutatus ad, dicunt invidunt definiebas cu qui.</h2>
+            </div>
+            <a class="btn btn-default noMargin" href="./html/ourstory.html">learn more about us</a>
+            <div class="osButtonBox">
+                <a href="https://www.facebook.com/pages/Cancer-Spot/228655924009658"><img src="./img/fbIcon.png" alt="Facebook"/></a>
+                <a href="https://twitter.com/CancerSpot"><img src="./img/twitterIcon.png" alt="Twitter"/></a>
+                <a href="http://instagram.com/cancerspot"><img src="./img/instIcon.png" alt="Instagram"/></a>
+            </div>
+        </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="ourStoryPhoto">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h1>our story.</h1>
-                    <p>4 friends, 1 formerly cancerous, ready to change the world for the better.<br>
-                        Rowan was diagnosed with Ewings Sarcoma, a rare bone cancer, in December of 2004 when he was 13 years old. After over a year of chemotherapy, surgeries and fighting, he celebrated remission. after a celebration that lasted a little more than a year, spots were found during a regular x-ray check up. Rowan's cancer had come back in his lungs. Disappointed, but not disheartened, he began new treatments. Surgery, chemotherapy and this time an anologus stem-cell transplant that push his body to the brink of death. 
-                    </p>
-                    <p><a href="mailto:mycancerspot@gmail.com">mycancerspot@gmail.com</a>
-                    </p>
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Facebook</span></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Instagram</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>    
-    </section>
+
 
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Cancer Spot</p>
+            
+        
+            <h6 class="footer-thing">Copyright &copy; Cancer Spot</h6>
         </div>
+
     </footer>
 
     <!-- jQuery Version 1.11.0 -->
