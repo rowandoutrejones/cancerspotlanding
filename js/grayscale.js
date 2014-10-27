@@ -35,3 +35,18 @@ $("#daButton").click(function() {
     }, 800);
     $('#inputThing').focus();
 });
+
+// $('.btn-submit').click(function(){
+//     var emailText = $('#inputThing').val();
+//     if(emailText.length === 0){
+//         swal({ 
+//         title: "Error!",   
+//         text: "You didn't enter a valid email address",   
+//         type: "error",   
+//         confirmButtonText: "Try again" 
+//     });
+
+//     } else {
+//         swal("Yee haw!", "We'll keep you posted.", "Cool")
+//     };
+// });
